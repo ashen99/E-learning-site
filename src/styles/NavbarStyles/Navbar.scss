@@ -1,0 +1,142 @@
+@import "../Variables.scss";
+
+//desktop nav
+.navbar {
+  height: 25px;
+  padding: 25px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background-color: transparent;
+  font-size: 1.2rem;
+
+  .logo {
+    font-size: larger;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+    li {
+      cursor: pointer;
+      margin-left: 20px;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $text_blue;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .navbar_buttons {
+    display: flex;
+    gap: 2.5rem;
+    font-weight: 500;
+    font-size: 40px;
+    // padding-right:55px ;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+
+    .signInBtn {
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: $text_blue;
+      border: none;
+      background-color: transparent;
+    }
+
+    .registerBtn {
+      background-color: $text_blue;
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.2rem;
+      border-radius: 3px;
+      cursor: pointer;
+      box-shadow: 0 10px 15px 0 rgb(69 64 225 / 35%);
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 0 10px 15px 0 rgba(69, 64, 225, 0.5);
+        background-color: #302bdc;
+      }
+    }
+  }
+}
+
+//mobile nav
+.mobile-hamb {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  right: 3.11rem;
+
+  &:hover {
+    color: $text_blue;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+}
+
+.mobile_navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  .mobile_navbar__close {
+    font-size: 40px;
+    position: absolute;
+    top: 0.8rem;
+    right: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $text_blue;
+    }
+  }
+
+  .mobile_navbar__links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.2rem;
+    gap: 3rem;
+    text-align: center;
+
+    li {
+      &:hover {
+        cursor: pointer;
+        color: $text_blue;
+      }
+    }
+  }
+}
+
+.open-nav {
+  left: 0;
+}
