@@ -1,13 +1,11 @@
 .hero_section {
-  width: 100%;
   background-color: transparent;
   position: relative;
 }
 
 .hero_content {
-  width: 100%;
-  height: 80vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   padding-left: 5rem;
@@ -78,4 +76,56 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s;
+}
+.hero_content .hero_image {
+  padding-right: 25px;
+}
+@media (max-width: 1115px) {
+  .hero_content .hero_image {
+    display: none;
+  }
+}
+
+.banner_section {
+  padding-top: 3.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 7.5rem;
+}
+@media (max-width: 1115px) {
+  .banner_section {
+    padding-top: 3.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cdcddc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (max-width: 1115px) {
+  .banner {
+    gap: 2rem;
+    flex-direction: column;
+    min-width: 10rem;
+  }
+}
+
+.banner_box {
+  background-color: transparent;
+}
+@media (max-width: 800px) {
+  .banner_box {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Hero.css.map */
