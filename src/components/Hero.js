@@ -36,35 +36,29 @@ const Hero = () => {
       <div className="banner_section">
         <div className="banner">
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <img
-              src={course}
-              alt=""
-              style={{ height: "50px", width: "50px", paddingRight: "10px" }}
-            />
+            <div className="image_box">
+              <img className="category_image_1" src={course} alt="" />
+            </div>
             <div>
-              <h3>10k+</h3>
+              <h3 style={{ fontSize: "40px" }}>10k+</h3>
               <p>TOTAL COURSES</p>
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <img
-              src={mentors}
-              alt=""
-              style={{ height: "50px", width: "50px", paddingRight: "10px" }}
-            />
+            <div className="image_box">
+              <img className="category_image_1" src={mentors} alt="" />
+            </div>
             <div>
-              <h3>500k+</h3>
+              <h3 style={{ fontSize: "40px" }}>500k+</h3>
               <p>EXPERT MENTORS</p>
             </div>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <img
-              src={students}
-              alt=""
-              style={{ height: "50px", width: "50px", paddingRight: "10px" }}
-            />
+            <div className="image_box">
+              <img className="category_image_1" src={students} alt="" />
+            </div>
             <div>
-              <h3>300k+</h3>
+              <h3 style={{ fontSize: "40px" }}>300k+</h3>
               <p>STUDENTS GLOBALLY</p>
             </div>
           </div>

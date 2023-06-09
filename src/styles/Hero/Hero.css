@@ -124,8 +124,23 @@
 .banner_box {
   background-color: transparent;
 }
-@media (max-width: 800px) {
+@media (max-width: 773px) {
   .banner_box {
     flex-direction: column;
   }
+}
+
+.image_box {
+  position: relative;
+  background-color: white;
+  right: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.category_image_1 {
+  padding: 10px;
+  height: 60px;
+  width: 60px;
 }/*# sourceMappingURL=Hero.css.map */
