@@ -2,6 +2,7 @@
 
 .course_container {
   background-color: #ecf1fc;
+  padding-bottom: 6rem;
 }
 
 .course_title {
@@ -100,10 +101,19 @@
 
 .course_stats {
     display: flex;
+    justify-content: space-evenly;
     gap: 15px;
 }
 
 .course_stat_image {
     height: 30px;
     width: 30px;
+}
+
+.individual_stat {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  
 }

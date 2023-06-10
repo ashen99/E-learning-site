@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-color: #ecf1fc;
+}
+.footer .col1 h1 {
+  padding-bottom: 2rem;
+}
+.footer .socials {
+  display: flex;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.footer_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: center;
+  background-color: #ecf1fc;
+  padding: 1rem;
+}/*# sourceMappingURL=Footer.css.map */
