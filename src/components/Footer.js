@@ -35,21 +35,21 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <div className="col2">
+            <div className="col1">
               <h1>Links</h1>
               <p>Home</p>
               <p>About Us</p>
               <p>Our Process</p>
               <p>Services</p>
             </div>
-            <div className="col3">
+            <div className="col1">
               <h1>Community</h1>
               <p>Go Premium</p>
               <p>Team Plans</p>
               <p>Refer a Friend</p>
               <p>Gift Cards</p>
             </div>
-            <div className="col4">
+            <div className="col1">
               <h1>Resources</h1>
               <p>Support</p>
               <p>Latest Updates</p>

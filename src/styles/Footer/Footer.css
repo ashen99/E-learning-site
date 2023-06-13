@@ -9,6 +9,12 @@
 .footer .col1 h1 {
   padding-bottom: 2rem;
 }
+@media (max-width: 800px) {
+  .footer .col1 h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
 .footer .socials {
   display: flex;
   gap: 2rem;
@@ -19,6 +25,11 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .footer_content {
+    flex-direction: column;
+  }
 }
 
 .copyrights {

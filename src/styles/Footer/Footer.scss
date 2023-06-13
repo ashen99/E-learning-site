@@ -6,11 +6,14 @@
   padding-bottom: 2rem;
   background-color: #ecf1fc;
 
-
   .col1 {
-    
     h1 {
-        padding-bottom: 2rem;
+      padding-bottom: 2rem;
+
+      @media (max-width: 800px) {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
     }
   }
 
@@ -19,21 +22,21 @@
     gap: 2rem;
     padding-top: 2rem;
   }
-
-
 }
 
 .footer_content {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .copyrights {
-    display: flex;
-    justify-content: center;
-    background-color: #ecf1fc;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #ecf1fc;
+  padding: 1rem;
 }
-
-
